@@ -1,5 +1,5 @@
 function weatherDataFetch(city) {
-    let key = 'b05a100c6e6c27146f81ad75c338bae4';
+    let key = '';
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`)
     .then(resp => {
         return resp.json();
